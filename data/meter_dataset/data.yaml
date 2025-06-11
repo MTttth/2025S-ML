@@ -1,0 +1,5 @@
+names:
+  0: digit_region
+path: data/meter_dataset
+train: images/train
+val: images/val
