@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-crop_six.py
+split_digits.py
 -----------
 将 /data/regions/*.jpg 按 YOLOv8 检测框裁成 6 张数字小图
 模型: /runs/detect/train4/weights/best.pt
@@ -13,8 +13,8 @@ from pathlib import Path
 from tqdm import tqdm
 
 IMG_DIR = Path('./data/regions')
-WEIGHTS = './runs/detect/train6/best.pt'
-OUTDIR  = Path('out_digitsV2')
+WEIGHTS = './runs/detect/train14/epoch40_deploy.pt'
+OUTDIR  = Path('out_digitsV7')
 OUTDIR.mkdir(exist_ok=True)
 
 model = YOLO(WEIGHTS)

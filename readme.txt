@@ -52,9 +52,6 @@ meter_reading/
 python -m venv .venv && source .venv/bin/activate  # Linux/Mac
 # Windows: python -m venv .venv && .\.venv\Scripts\activate
 
-# 2. 安装依赖
-pip install -r requirements.txt
-
 # 3. (可选) Apple M-series GPU 训练
 # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/mps
 
@@ -81,7 +78,7 @@ python train_detector.py --epochs 100 --imgsz 640
 python detect_region.py
 
 # 用 YOLO 训练 split_digits 模型
-yolo detect train data=./data/splits/data.yaml model=yolov8n.pt imagsz=640 epoch=100
+yolo detect train data=./data/splitsV2/data.yaml model=yolov8n.pt imgsz=640 epochs=100
 
 # 4. ROI → 单数字
 python split_digits.py

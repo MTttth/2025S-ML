@@ -21,7 +21,7 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--tr',default='data/digits/train')
     ap.add_argument('--val',default='data/digits/val')
-    ap.add_argument('--epochs',type=int,default=40)
+    ap.add_argument('--epochs',type=int,default=100)
     ap.add_argument('--bs',type=int,default=64)
     ap.add_argument('--out',default='models/resnet18_digits.pth')
     args=ap.parse_args()

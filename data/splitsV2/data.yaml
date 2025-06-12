@@ -1,0 +1,13 @@
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 1
+names: ['digits']
+
+roboflow:
+  workspace: digits-txupv
+  project: my-first-project-awou9
+  version: 3
+  license: Private
+  url: https://app.roboflow.com/digits-txupv/my-first-project-awou9/3
